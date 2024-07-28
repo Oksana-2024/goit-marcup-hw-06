@@ -75,7 +75,9 @@ button {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
+  height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,6 +117,11 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+  .header-container {
+    height: 72px;
+  }
+
   .header-menu-btn {
     display: none;
   }
@@ -317,7 +324,7 @@ button {
 }
 
 .mobile-menu-contacts {
-  margin-bottom: auto;
+  margin-bottom: 48px;
 }
 
 .mobile-menu-soc-list {
@@ -359,6 +366,7 @@ button {
   background-position: 50% 50%;
   background-size: cover;
   margin: auto;
+  max-width: 320px;
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -424,6 +432,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-hero-1x.jpg);
+      max-width: 768px;
   }
   .text-title-page {
     font-weight: 700;
@@ -459,6 +468,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero_image-1x.jpg);
+      max-width: 1440px;
   }
 
   .btn-title-page:focus {
@@ -519,6 +529,11 @@ button {
     gap: 72px 24px;
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .features-subtitle {
+    text-align: start;
+  }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -548,6 +563,7 @@ button {
   }
 
   .features-descr {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -572,6 +588,7 @@ button {
   color: #2e2f42;
   background-color: #f4f4fd;
 }
+
 .title-team-page {
   font-weight: 700;
   font-size: 36px;
@@ -712,7 +729,18 @@ button {
 }
 
 .portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   margin-bottom: 8px;
+}
+
+.portfolio-descr {
+  font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 
 .border-portfolio {
@@ -883,7 +911,6 @@ button {
 }
 
 .footer-input {
-  margin-bottom: 16px;
   min-width: 288px;
   height: 40px;
   padding: 8px 16px;
@@ -897,6 +924,11 @@ button {
   outline: transparent;
   color: #ffffff;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-label-input {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .footer-input::placeholder {
